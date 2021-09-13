@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameboard {
+  display: grid;
+  background-color: black;
+  border: 1px solid black;
+
+  gap: 1px;
+}
+
+.gameboard > * {
+  background-color: white;
+}
+
+.cell.alive {
+  background-color: black;
+}
